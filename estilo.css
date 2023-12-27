@@ -1,0 +1,234 @@
+/**
+ *	Versión 1.0.0
+ */
+@charset "utf-8";
+
+/**
+ *	Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/**
+ *	Mobile
+ */
+
+/**	General */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1,3em;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/**	Body */
+body {
+    background-color: deeppink;
+    color: #000000;
+}
+
+/**	Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: deeppink;
+    color: #5c1351;
+
+}
+
+/**	Encabezados */
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin: 0.8em 0;
+    font-size: 3em;
+    color: #5c1351;
+}
+
+/**	Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4em 2em;
+    background-color: #ffffff;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+}
+
+ul li,
+ol li {
+    margin-left: 2em;
+}
+
+p strong,
+p em,
+p span,
+p a,
+ul li strong,
+ul li em,
+ul li a,
+ol li strong,
+ol li em,
+ol li a {
+    font-size: 0.8em;
+}
+
+p a,
+ul li a,
+ol li a {
+    color: rgb(115, 0, 58);
+}
+
+p strong,
+ul li strong,
+ol li strong {
+    font-weight: 700;
+}
+
+p em,
+ul li em,
+ol li em {
+    font-style: italic;
+}
+
+
+button,
+input[type='button'],
+input[type='submit'] {
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.25em 0.5em;
+    background: deeppink;
+    cursor: pointer;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+}
+
+input[type='button']:disabled,
+input[type='submit']:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+
+
+/**	Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    background-color: deeppink;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+}
+
+footer ul li a {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+
+/**	Overs */
+p a:hover,
+li a:hover,
+button:hover,
+input[type='button']:hover,
+input[type='submit']:hover {
+    opacity: 0.8;
+}
+
+/*	Carrito */
+#minicarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    width: 100%;
+    background: rgba(165, 27, 149, 0.25);
+    font-size: small;
+}
+
+
+
+/**
+ *	Web
+ */
+@media screen and (min-width: 960px) {
+    #productos {
+        flex-direction: row;
+    }
+
+    #productos div {
+        width: 30%;
+    }
+
+    /**	Footer */
+    footer ul {
+        flex-direction: row;
+    }
+}
+
